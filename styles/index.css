@@ -342,6 +342,12 @@ section {
     border-radius: 9.6px;
     width: 334.8px;
     height: 276.57px;
+    transition: all 0.5s ease;
+}
+
+.top-bottom-box:hover{
+    width: 360px;
+    height: 290px;
 }
 
 #top-box-items {
@@ -401,6 +407,12 @@ section {
     border-radius: 9.6px;
     width: 358.8px;
     height: 277.56px;
+    transition: all 0.5s ease;
+}
+
+#middle-box:hover {
+    width: 380px;
+    height: 290px;
 }
 
 #middle-box-items {
