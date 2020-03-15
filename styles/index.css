@@ -275,9 +275,9 @@ section {
 
 .quicklink-button:hover {
     cursor: pointer;
-    width: 200px;
+    width: 250px;
     height: 100%;
-    font-size: 25px;
+    font-size: 30px;
     overflow: hidden;
 }
 
@@ -288,7 +288,7 @@ section {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 27px;
     text-align: center;
     letter-spacing: -0.350877px;
@@ -302,7 +302,7 @@ section {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 19.2px;
+    font-size: 25px;
     line-height: 26px;
     text-align: center;
     letter-spacing: -0.336842px;
@@ -346,7 +346,7 @@ section {
 }
 
 .top-bottom-box:hover{
-    width: 360px;
+    width: 380px;
     height: 290px;
 }
 
