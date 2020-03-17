@@ -147,9 +147,7 @@ header section:last-child {
 
 .right-header-button:hover {
     cursor: pointer;
-    box-shadow: 0 0 10px #ccc;
-    width: 120px;
-    height: 50px;
+    text-decoration: white underline;
 }
 
 #right-header-button-container button span {
@@ -305,6 +303,7 @@ section {
 
 .quicklink-button:hover {
     cursor: pointer;
+    text-decoration: underline;
     overflow: hidden;
 }
 
