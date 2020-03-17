@@ -20,7 +20,7 @@ body {
 
 header {
     width: 100%;
-    height: 76px;
+    height: 50px;
     display: flex;
 }
 
@@ -45,7 +45,7 @@ header section:last-child {
     font-size: 24px;
     line-height: 28px;
     color: #EB6023;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 215px;
 }
 
@@ -58,7 +58,7 @@ header section:last-child {
     margin: 0px;
     padding: 0px;
     text-align: center;
-    margin-top: 41px;
+    margin-top: 20px;
 }
 
 #left-menu ul li {
@@ -85,7 +85,7 @@ header section:last-child {
 #right-menu {
     display: flex;
     float: right;
-    margin-top: 42.2px;
+    margin-top: 19.2px;
     margin-right: 36.6px;
 }
 
@@ -125,13 +125,13 @@ header section:last-child {
     float: right;
     display: flex;
     align-items: center;
-    margin-top: 25.4px;
+    margin-top: 10.4px;
     margin-right: 50.6px;
 }
 
 .right-header-button {
-    width: 116.4px;
-    height: 48.94px;
+    width: 100.4px;
+    height: 30.94px;
     background: transparent;
     border: 0.864px solid #FFFFFF;
     box-sizing: border-box;
@@ -156,7 +156,7 @@ header section:last-child {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 13.2px;
+    font-size: 10.2px;
     line-height: 15px;
     letter-spacing: -0.231579px;
     color: #FFFFFF;
@@ -192,13 +192,13 @@ section {
 #slogan {
     width: 351px;
     height: 96px;
-    margin-top: 157px;
+    margin-top: 85px;
     margin-left: 228px;
     padding-right: 30px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 900;
-    font-size: 38.4px;
+    font-size: 30.4px;
     line-height: 48px;
     letter-spacing: -0.5184px;
     color: #525256;
@@ -212,10 +212,10 @@ section {
 #input-container {
     position: absolute;
     float: right;
-    width: 85%;
-    height: 86px;
-    top: 290.8px;
-    /* left: 215px; */
+    width: calc(110% - 215px);
+    height: 50px;
+    top: 300px;
+    left: 215px;
     right: -80px;
     background: #FFFFFF;
     box-shadow: 0px 30px 38px rgba(0, 0, 0, 0.03);
@@ -230,20 +230,28 @@ section {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: 19.2px;
+    font-size: 15.2px;
     line-height: 23px;
     letter-spacing: 0.6px;
     color: #BCBCBC;
-    width: 70%;
-    margin-top: 20px;
+    width: 88%;
+    height: 100%;
     text-indent: 33.3px;
+}
+
+#input-container button {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
 }
 
 #search-icon {
     transform: translateY(3px);
-    float: right;
-    margin-right: 40px;
-    margin-top: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 #search-icon:hover {
@@ -252,17 +260,28 @@ section {
 
 #quicklinks-container {
     margin-left: 215px;
-    margin-top: 200.2px;
+    margin-top: 235px;
+    margin-bottom: 10px;
 }
 
 #lightning-icon {
     transform: translateY(3px);
 }
 
+#quicklinks-container span {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.2px;
+    line-height: 48px;
+    letter-spacing: 3.336px;
+    color: #000000;
+}
+
 #quicklinks-button-container {
     margin-top: 19.2px;
     margin-left: 215px;
-    float: left;
+    padding-right: 60px;
 }
 
 .quicklink-button {
@@ -271,42 +290,27 @@ section {
     background: transparent;
     padding: 10px;
     transition: all 0.1s ease;
-}
-
-.quicklink-button:hover {
-    cursor: pointer;
-    width: 250px;
-    height: 100%;
-    font-size: 30px;
-    overflow: hidden;
-}
-
-.orange-button {
-    border: 2px solid #F16521;
-    box-sizing: border-box;
-    border-radius: 8px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: -0.350877px;
-    color: #F16521;
-}
-
-.non-orange-button {
-    border: 1.92px solid #E4E4E4;
+    border: 2px solid #E4E4E4;
     box-sizing: border-box;
     border-radius: 7.68px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 26px;
     text-align: center;
     letter-spacing: -0.336842px;
     color: #3B3B3B;
+}
+
+.quicklink-button:hover {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.quicklink-button.orange-button {
+    border: 2px solid #F16521;
+    color: #F16521;
 }
 
 .transparency-level-1 {
@@ -326,217 +330,158 @@ section {
 }
 
 #box-container {
-    width: 358.8px;
-    margin-left: calc(50% - 358.8px / 2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30.6px;
+    margin-left: calc(50% - 300px / 2);
+    margin-top: 90px;
     position: relative;
+    width: 300px;
 }
 
-.top-bottom-box {
+.box {
+    width: 300px;
+    height: 230px;
     background: #ED6E2D;
     mix-blend-mode: screen;
     opacity: 0.3;
     border-radius: 9.6px;
-    width: 334.8px;
-    height: 276.57px;
-    transition: all 0.5s ease;
 }
 
-.top-bottom-box:hover{
-    width: 380px;
-    height: 290px;
-}
-
-#top-box-items {
+.box-item {
+    width: 300px;
+    height: 230px;
     position: absolute;
-    width: 334.8px;
-    top: 85.2px;
     display: flex;
     align-items: center;
-}
-
-#top-image-container {
-    flex-grow: 1;
-    text-align: center;
-    margin-left: 70.2px;
-}
-
-#top-image-container:hover {
     transition: all 0.5s ease;
 }
 
-#top-image-container img:hover {
-    height: 90px;
+.box-item:hover {
+    width: 320px;
+    height: 250px;
+    background: white;
+    border-radius: 9.6px;
     cursor: pointer;
 }
 
-#top-span-container {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    border-left: 0.6px solid #FFFFFF;
-    width: 154.44px;
-    height: 109.08px;
-}
-
-#top-span-container span {
+.box-span {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 15.12px;
+    font-size: 19px;
     line-height: 21px;
     color: #FFFFFF;
-    text-indent: 2px;
-    margin-right: 30px;
-    margin-left: 10px;
-    transition: all 0.2s ease;
 }
 
-#top-span-container span:hover {
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: underline;
+.box-item:hover .box-span {
+    font-size: 21px;
+    color: black;
 }
 
-#middle-box {
-    background: #FFFFFF;
-    box-shadow: 0px 8px 42px rgba(133, 133, 133, 0.1), 0px 18px 26px rgba(119, 119, 119, 0.1), 0px 5px 10px rgba(161, 161, 161, 0.12);
-    border-radius: 9.6px;
-    width: 358.8px;
-    height: 277.56px;
-    transition: all 0.5s ease;
+#top-box-item {
+    top: 0px;
+    left: 0px;
 }
 
-#middle-box:hover {
-    width: 380px;
-    height: 290px;
+#top-box-item img {
+    margin-left: 59px;
+    margin-right: 10px;
+    height: 60px;
 }
 
-#middle-box-items {
-    position: absolute;
-    width: 358.8px;
-    display: flex;
-    align-items: center;
-    top: 352.17px;
+#top-box-item div:last-child {
+    border-left: 1px solid white;
+    padding: 10px 10px;
 }
 
-#middle-image-container {
-    flex-grow: 1;
-    text-align: center;
-    margin-left: 28.96px;
+#top-box-item:hover {
+    left: calc(50% - 320px / 2);
 }
 
-#middle-image-container:hover {
-    transition: all 0.5s ease;
-}
-
-#middle-image-container img:hover {
-    cursor: pointer;
+#top-box-item:hover img {
+    filter: invert(48%) sepia(58%) saturate(3022%) hue-rotate(348deg) brightness(98%) contrast(93%);
     height: 70px;
 }
 
-#middle-span-container {
-    flex-grow: 1;
-    border-left: 0.6px solid #F16521;
-    width: 171.6px;
-    height: 121.2px;
+#top-box-item:hover div:last-child {
+    border-left: 1px solid #ED6E2D;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#middle-span {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16.8px;
-    line-height: 23px;
-    color: #000000;
-    text-indent: 1px;
-    margin-right: 30px;
-    margin-left: 10px;
-    margin-top: 15px;
+#middle-box-item {
+    top: 230px;
+    left: 0px;
+}
+
+#middle-box-item img {
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(209deg) brightness(116%) contrast(601%);
+}
+
+#middle-box-item span {
     display: block;
-    transition: all 0.2s ease;
 }
 
-#middle-span:hover {
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: underline;
+#middle-box-item div:last-child {
+    border-left: 1px solid white;
+    padding: 10px 10px;
 }
 
 #view-more {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10.8px;
-    line-height: 15px;
-    color: #1CA78B;
-    border-bottom: 0.2px solid #1CA78B;
-    display: block;
-    width: 67.2px;
-    margin-left: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    border-bottom: 1px solid white;
+    width: 34%;
     margin-top: 10px;
-    transition: all 0.2s ease;
 }
 
-#view-more:hover {
-    font-size: 15px;
-    cursor: pointer;
-    border-bottom: 2.5px solid #1CA78B;
-    width: 91px;
+#middle-box-item:hover {
+    left: calc(50% - 320px / 2);
 }
 
-#bottom-box-items {
-    position: absolute;
-    width: 334.8px;
-    top: 632.13px;
-    display: flex;
-    align-items: center;
+#middle-box-item:hover img {
+    height: 50px;
+    filter: invert(0%);
 }
 
-#bottom-image-container {
-    flex-grow: 1;
-    text-align: center;
-    margin-left: 45.2px;
+#middle-box-item:hover div:last-child {
+    border-left: 1px solid #F16521;
 }
 
-#bottom-image-container:hover {
-    transition: all 0.5s ease;
+#middle-box-item:hover #view-more {
+    color: #1CA78B;
+    border-bottom: 1px solid #1CA78B;
+    font-size: 10px;
 }
 
-#bottom-image-container img:hover {
-    cursor: pointer;
-    height: 70px;
+#bottom-box-item {
+    left: 0px;
+    top: 460px;
 }
 
-#bottom-span-container {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    border-left: 0.6px solid #FFFFFF;
-    width: 140.04px;
-    height: 109.08px;
+#bottom-box-item img {
+    height: 40px;
+    margin-left: 54px;
+    margin-right: 10px;
 }
 
-#bottom-span-container span {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15.12px;
-    line-height: 21px;
-    color: #FFFFFF;
-    text-indent: 1px;
-    margin-right: 30px;
-    margin-left: 10px;
-    transition: all 0.2s ease;
+#bottom-box-item div:last-child {
+    border-left: 1px solid white;
+    padding: 10px 10px;
 }
 
-#bottom-span-container span:hover {
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: underline;
+#bottom-box-item:hover {
+    left: calc(50% - 320px / 2);
+}
+
+#bottom-box-item:hover img {
+    filter: invert(48%) sepia(58%) saturate(3022%) hue-rotate(348deg) brightness(98%) contrast(93%);
+    height: 50px;
+}
+
+#bottom-box-item:hover div:last-child {
+    border-left: 1px solid #F16521;
 }
 
 .background-design {
@@ -544,7 +489,7 @@ section {
     mix-blend-mode: screen;
     opacity: 0.2;
     border-radius: 7.2px;
-    transform: rotate(35deg);
+    transform: rotate(30deg);
     position: absolute;
 }
 
@@ -571,41 +516,34 @@ section {
 }
 
 #background4 {
-    width: 210px;
-    height: 210px;
-    left: 50px;
-    bottom: -130px;
+    width: 250px;
+    height: 250px;
+    left: 40px;
+    bottom: -70px;
 }
 
 #background5 {
     width: 138px;
     height: 138px;
-    left: 90px;
-    bottom: -150px;
+    left: 170px;
+    bottom: -90px;
 }
 
 #background6 {
-    width: 138px;
-    height: 138px;
-    left: 90px;
-    bottom: -150px;
+    width: 270px;
+    height: 270px;
+    right: 145px;
+    bottom: -195px;
 }
 
 #background7 {
-    width: 270px;
-    height: 270px;
-    right: 135px;
-    bottom: -300px;
+    width: 220px;
+    height: 220px;
+    right: 5px;
+    bottom: 0px;
 }
 
 #background8 {
-    width: 210px;
-    height: 210px;
-    right: -50px;
-    bottom: -150px;
-}
-
-#background9 {
     width: 210px;
     height: 210px;
     right: -10px;
@@ -616,18 +554,18 @@ section {
     border-radius: 100px;
 }
 
-#background10 {
+#background9 {
     width: 93.6px;
     height: 93.6px;
-    left: -10px;
-    bottom: 150px;
+    left: 0px;
+    bottom: 290px;
 }
 
-#background11 {
+#background10 {
     width: 120px;
     height: 120px;
     right: 118.4px;
-    bottom: 270px;
+    bottom: 355px;
 }
 
 .doghnut-design {
@@ -639,14 +577,14 @@ section {
     background: #f00;
 }
 
-#background12 {
+#background11 {
     width: 129.6px;
     height: 129.6px;
-    left: 140.4px;
-    top: 350px;
+    left: 180.4px;
+    top: 330px;
 }
 
-#background13 {
+#background12 {
     position: absolute;
     width: 129.6px;
     height: 129.6px;
