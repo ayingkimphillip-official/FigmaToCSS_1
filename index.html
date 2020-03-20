@@ -25,24 +25,23 @@
                     <div id="background2" class="background-design"></div>
                     <div id="right-header-button-container">
                         <button class="right-header-button">
-                            <img class="button-icon" src="images/lock.svg" />
+                            <i class="fas fa-lock button-icon"></i>
                             <span>LOG IN</span>
                         </button>
                         <button class="right-header-button">
-                            <img id="plus-icon" class="button-icon" src="images/plus.svg" />
+                            <i class="fas fa-plus button-icon"></i>
                             <span>SIGN UP</span>
                         </button>
                     </div>
                     <div id="right-menu">
                         <ul>
                             <li>
-                                <img id="gear-icon" src="images/cog.svg" />
+                                <i class="fas fa-cog"></i>
                                 <span>INTEGRATE</span>
                             </li>
                             <li>ABOUT US</li>
                         </ul>
                     </div>
-                    
                 </section>
             </header>
             <div id="section-container">
@@ -104,7 +103,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div id="background1" class="background-design"></div>
                     <div id="background3" class="background-design"></div>
                     <div id="background4" class="background-design"></div>
@@ -129,80 +127,96 @@
                         <span>SIGN UP</span>
                     </button>
                 </div>
-                <nav id="mobile-menu">
-                    <ul>
-                        <li>
-                            <i class="fas fa-bars"></i>
-                        </li>
-                        <li>PERSONAL</li>
-                        <li>BUSINESS</li>
-                        <li>INTEGRATE</li>
-                        <li>ABOUT US</li>
-                    </ul>
-                </nav>
+                <div id="mobile-menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <i class="fas fa-bars"></i>
+                            </li>
+                            <li>PERSONAL</li>
+                            <li>BUSINESS</li>
+                            <li>INTEGRATE</li>
+                            <li>ABOUT US</li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-            <section id="mobile-top-section">
-                <h2 id="mobile-slogan">
-                    Because payments should be <span id="mobile-easy">easy</span>
-                </h2>
-                <div id="mobile-input">
-                    <input placeholder="Type the biller you want to pay here (e.g. DSTV)" />
-                    <button>
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                <div id="mobile-quicklink-container">
-                    <span>
-                        <i class="fas fa-bolt"></i>
-                    </span>
-                    <span>Quicklinks</span>
-                </div>
-                <div id="mobile-quicklink-button-container">
-                    <button class="btn-mobile-quicklink orange-button">Buy JAMB Form</button>
-                    <button class="btn-mobile-quicklink orange-button">Buy Airtime</button>
-                    <button class="btn-mobile-quicklink orange-button">Buy Electricity</button>
-                    <button class="btn-mobile-quicklink">Setup Standing Order</button>
-                    <button class="btn-mobile-quicklink">Pay FGN and State TSA</button>
-                    <button class="btn-mobile-quicklink">Pay an Invoice</button>
-                    <button class="btn-mobile-quicklink">Re-send A Receipt/Invoice</button>
-                    <button class="btn-mobile-quicklink">Upload NHF Schedule</button>
-                    <button class="btn-mobile-quicklink">Pay Family, Friends, Others</button>
-                    <button class="btn-mobile-quicklink">Pay Salaries</button>
-                    <button class="btn-mobile-quicklink">Pay Taxes</button>
-                </div>
-            </section>
-            <section id="mobile-bottom-section">
-                <div id="mobile-box-container">
-                    <div class="mobile-box"></div>
-                    <div id="mobile-left-box" class="mobile-box-item">
-                        <div>
-                            <img src="images/receiveMoney.svg" />
+            <div id="mobile-section-container">
+                <section id="mobile-top-section">
+                    <h2 id="mobile-slogan" class="mobile-top-section-margin">
+                        Because payments should be <span id="mobile-easy">easy</span>
+                    </h2>
+                    <div id="mobile-background12"></div>
+                    <div id="mobile-input">
+                        <input placeholder="Type the biller you want to pay here (e.g. DSTV)" />
+                        <button>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div id="mobile-quicklink-container" class="mobile-top-section-margin">
+                        <span>
+                            <i class="fas fa-bolt"></i>
+                        </span>
+                        <span>Quicklinks</span>
+                    </div>
+                    <div id="mobile-quicklink-button-container" class="mobile-top-section-margin">
+                        <button class="btn-mobile-quicklink orange-button">Buy JAMB Form</button>
+                        <button class="btn-mobile-quicklink orange-button">Buy Airtime</button>
+                        <button class="btn-mobile-quicklink orange-button">Buy Electricity</button>
+                        <button class="btn-mobile-quicklink">Setup Standing Order</button>
+                        <button class="btn-mobile-quicklink">Pay FGN and State TSA</button>
+                        <button class="btn-mobile-quicklink">Pay an Invoice</button>
+                        <button class="btn-mobile-quicklink">Re-send A Receipt/Invoice</button>
+                        <button class="btn-mobile-quicklink">Upload NHF Schedule</button>
+                        <button class="btn-mobile-quicklink">Pay Family, Friends, Others</button>
+                        <button class="btn-mobile-quicklink">Pay Salaries</button>
+                        <button class="btn-mobile-quicklink">Pay Taxes</button>
+                    </div>
+                </section>
+                <section id="mobile-bottom-section">
+                    <div id="mobile-box-container">
+                        <div class="mobile-box"></div>
+                        <div id="mobile-top-box" class="mobile-box-item">
+                            <div>
+                                <img src="images/receiveMoney.svg" />
+                            </div>
+                            <div>
+                                <span class="mobile box-span">View all your Balances, On One Screen</span>
+                            </div>
                         </div>
-                        <div>
-                            <span class="box-span">View all your Balances, On One Screen</span>
+                        <div class="mobile-box"></div>
+                        <div id="mobile-middle-box" class="mobile-box-item">
+                            <div>
+                                <img src="images/money-laptop.svg" />
+                            </div>
+                            <div>
+                                <span class="mobile box-span">View all your Balances, On One Screen</span>
+                                <span id="mobile-view-more" class="mobile box-span">View more →</span>
+                            </div>
+                        </div>
+                        <div class="mobile-box"></div>
+                        <div id="mobile-bottom-box" class="mobile-box-item">
+                            <div>
+                                <img src="images/calculator.svg" />
+                            </div>
+                            <div>
+                                <span class="mobile box-span">Easier Payroll for All Businesses</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="mobile-box"></div>
-                    <div id="mobile-center-box" class="mobile-box-item">
-                        <div>
-                            <img src="images/money-laptop.svg" />
-                        </div>
-                        <div>
-                            <span class="box-span">View all your Balances, On One Screen</span>
-                            <span class="box-span">View more →</span>
-                        </div>
-                    </div>
-                    <div class="mobile-box"></div>
-                    <div id="mobile-right-box" class="mobile-box-item">
-                        <div>
-                            <img src="images/calculator.svg" />
-                        </div>
-                        <div>
-                            <span class="box-span">Easier Payroll for All Businesses</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    <div id="mobile-background1" class="mobile background-design"></div>
+                    <div id="mobile-background2" class="mobile background-design"></div>
+                    <div id="mobile-background3" class="mobile background-design"></div>
+                    <div id="mobile-background4" class="mobile background-design circular-design"></div>
+                    <div id="mobile-background5" class="mobile background-design doghnut-design"></div>
+                    <div id="mobile-background6" class="mobile background-design"></div>
+                    <div id="mobile-background7" class="mobile background-design"></div>
+                    <div id="mobile-background8" class="mobile background-design"></div>
+                    <div id="mobile-background9" class="mobile background-design circular-design"></div>
+                    <div id="mobile-background10" class="mobile background-design"></div>
+                    <div id="mobile-background11" class="mobile background-design"></div>
+                </section>
+            </div>
         </div>
     </body>
 </html>
