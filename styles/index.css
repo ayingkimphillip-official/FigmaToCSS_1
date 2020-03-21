@@ -162,14 +162,8 @@ header section:last-child {
 }
 
 .button-icon {
-    /* transform: translateY(3px); */
     color: white;
 }
-
-/* #plus-icon {
-    width: 15px;
-    height: 15px;
-} */
 
 #section-container {
     display: flex;
@@ -485,8 +479,7 @@ section {
 #view-more {
     font-size: 10px;
     line-height: 10px;
-    border-bottom: 1px solid white;
-    width: 34%;
+    text-decoration: underline;
     margin-top: 10px;
 }
 
@@ -505,8 +498,7 @@ section {
 
 #middle-box-item:hover #view-more {
     color: #1CA78B;
-    border-bottom: 1px solid #1CA78B;
-    font-size: 10px;
+    text-decoration: underline;
 }
 
 #bottom-box-item {
@@ -1055,7 +1047,6 @@ footer {
         width: 100%;
         flex-grow: 0;
         position: relative;
-        /* overflow: hidden; */
     }
     .mobile-top-section-margin {
         margin-left: 10px;
@@ -1186,6 +1177,7 @@ footer {
         width: 100%;
         height: 200px;
         left: 0px;
+        z-index: 1;
     }
     .mobile-box-item:hover {
         background: white;
@@ -1237,9 +1229,8 @@ footer {
     #mobile-view-more {
         font-size: 13px;
         line-height: 10px;
-        border-bottom: 1px solid white;
-        width: 40%;
         margin-top: 10px;
+        text-decoration: underline;
     }
     #mobile-middle-box:hover img {
         height: 50px;
@@ -1247,10 +1238,9 @@ footer {
     }
     #mobile-middle-box:hover #mobile-view-more {
         color: #1CA78B;
-        border-bottom: 1px solid #1CA78B;
         padding-right: 0px;
         font-size: 13px;
-        width: 43%;
+        text-decoration: underline;
     }
     #mobile-middle-box:hover div:last-child {
         border-left: 1px solid #F16521;
@@ -1387,5 +1377,238 @@ footer {
     #mobile-footer {
         display: block;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobile.box-span {
+        font-size: 13px;
+    }
+    .mobile-box-item:hover .mobile.box-span {
+        font-size: 17px;
+    }
+    #mobile-top-box img {
+        height: 60px;
+        margin-left: 54px;
+    }
+    #mobile-top-box:hover img {
+        height: 65px;
+    }
+    #mobile-middle-box img {
+        height: 35px;
+        margin-left: 23px;
+    }
+    #mobile-middle-box:hover img {
+        height: 45px;
+    }
+    #mobile-view-more, #mobile-middle-box:hover #mobile-view-more {
+        font-size: 12px;
+    }
+    #mobile-bottom-box img {
+        height: 45px;
+        margin-left: 41px;
+    }
+    #mobile-bottom-box:hover img {
+        height: 55px;
+    }
+    #mobile-background5 {
+        display: none;
+    }
+    #mobile-background9 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    #mobile-background4 {
+        left: 55px;
+        top: 420px;
+    }
+}
+
+@media screen and (max-width: 657px) {
+    .mobile-box-item:hover .mobile.box-span {
+        font-size: 14px;
+    }
+    #mobile-background4 {
+        left: 20px;
+        top: 420px;
+    }
+    #mobile-background7 {
+        left: 100px;
+        bottom: -100px;
+    }
+    #mobile-background10 {
+        right: 30px;
+    }
+    #mobile-background11 {
+        bottom: -100px;
+        right: -50px;
+    }
+    #mobile-background13 {
+        left: 100px;
+        top: 570px;
+    }
+    #mobile-background14 {
+        left: 0px;
+        top: 550px;
+    }
+    #mobile-background15 {
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    #mobile-slogan {
+        font-size: 25.4px;
+    }
+    #mobile-input input {
+        font-size: 13px;
+    }
+    #mobile-view-more, #mobile-middle-box:hover #mobile-view-more {
+        font-size: 11px;
+    }
+    #mobile-background8 {
+        top: -10px;
+        right: -100px;
+    }
+    #mobile-background13 {
+        left: 70px;
+    }
+    #mobile-background16 {
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 587px) {
+    #mobile-background16 {
+        top: 450px;
+        right: -40px;
+    }
+}
+
+@media screen and (max-width: 566px) {
+    .mobile.box-span {
+        font-size: 12px;
+    }
+    .mobile-box-item:hover .mobile.box-span {
+        font-size: 14px;
+    }
+    #mobile-top-box img {
+        height: 55px;
+        margin-left: 49px;
+    }
+    #mobile-top-box:hover img {
+        height: 60px;
+    }
+    #mobile-middle-box img {
+        height: 30px;
+        margin-left: 23px;
+    }
+    #mobile-middle-box:hover img {
+        height: 40px;
+    }
+    #mobile-view-more, #mobile-middle-box:hover #mobile-view-more {
+        font-size: 11px;
+    }
+    #mobile-bottom-box img {
+        height: 40px;
+        margin-left: 37px;
+    }
+    #mobile-bottom-box:hover img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    #mobile-slogan {
+        font-size: 20.4px;
+    }
+    #mobile-input input {
+        font-size: 12px;
+    }
+    .mobile.box-span {
+        font-size: 10px;
+    }
+    .mobile-box-item:hover .mobile.box-span {
+        font-size: 12px;
+    }
+    #mobile-top-box img {
+        height: 50px;
+        margin-left: 43px;
+    }
+    #mobile-top-box:hover img {
+        height: 55px;
+    }
+    #mobile-middle-box img {
+        height: 30px;
+        margin-left: 15px;
+    }
+    #mobile-middle-box:hover img {
+        height: 40px;
+    }
+    #mobile-view-more, #mobile-middle-box:hover #mobile-view-more {
+        font-size: 9px;
+    }
+    #mobile-bottom-box img {
+        height: 35px;
+        margin-left: 33px;
+    }
+    #mobile-bottom-box:hover img {
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 502px) {
+    #mobile-background4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #mobile-input input {
+        font-size: 10px;
+    }
+    #mobile-top-box img {
+        height: 40px;
+        margin-left: 39px;
+    }
+    #mobile-top-box:hover img {
+        height: 45px;
+    }
+    #mobile-middle-box img {
+        height: 25px;
+        margin-left: 15px;
+    }
+    #mobile-middle-box:hover img {
+        height: 35px;
+    }
+    #mobile-bottom-box img {
+        height: 30px;
+        margin-left: 29px;
+    }
+    #mobile-bottom-box:hover img {
+        height: 40px;
+    }
+    #mobile-background7 {
+        left: -50px;
+        bottom: -100px;
+    }
+    #mobile-background10 {
+        right: -30px;
+    }
+    #mobile-background11 {
+        bottom: -160px;
+        right: -70px;
+    }
+    #mobile-background13 {
+        left: 10px;
+        top: 620px;
+    }
+    #mobile-background15 {
+        right: 70px;
+    }
+    #mobile-background16 {
+        right: -100px;
     }
 }
