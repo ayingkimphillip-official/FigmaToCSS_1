@@ -648,6 +648,10 @@ section {
     transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
 }
 
+footer {
+    text-align: center;
+}
+
 @media screen and (max-width: 1841px) {
     #background11 {
         left: 100px;
@@ -954,17 +958,20 @@ section {
     }
 }
 
-#mobile-header, #mobile-section-container {
+#mobile-header, #mobile-section-container, #mobile-footer, #mobile-ad {
     display: none;
 }
 
 @media screen and (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
     #main-container {
         display: flex;
         flex-direction: column;
-        overflow: auto;
+        height: initial;
     }
-    header {
+    header, footer {
         display: none;
     }
     #section-container {
@@ -973,12 +980,11 @@ section {
     #mobile-header {
         display: flex;
         width: 100%;
+        z-index: 1;
     }
     #mobile-section-container {
         display: flex;
         flex-direction: column;
-        overflow-x: hidden;
-        overflow-y: scroll;
     }
     #mobile-logo {
         flex-shrink: 1;
@@ -1077,6 +1083,7 @@ section {
         display: flex;
         align-items: center;
         margin-left: 10px;
+        z-index: 1;
     }
     #mobile-input input {
         width: 90%;
@@ -1119,6 +1126,8 @@ section {
     }
     #mobile-quicklink-button-container {
         width: 100%;
+        position: inherit;
+        z-index: 1;
     }
     .btn-mobile-quicklink {
         padding: 10px;
@@ -1153,7 +1162,6 @@ section {
         align-items: center;
         position: relative;
         width: 100%;
-        overflow: hidden;
     }
     #mobile-box-container {
         width: calc(100%/3);
@@ -1296,14 +1304,14 @@ section {
         height: 129.6px;
     }
     #mobile-background6 {
-        bottom: -70px;
-        left: 10px;
+        bottom: -10px;
+        left: -25px;
         width: 170px;
         height: 170px;
     }
     #mobile-background7 {
-        bottom: -60px;
-        left: 140px;
+        bottom: -40px;
+        left: 200px;
         width: 100px;
         height: 100px;
     }
@@ -1320,14 +1328,14 @@ section {
         height: 100px;
     }
     #mobile-background10 {
-        bottom: -100px;
-        right: 170px;
+        bottom: -40px;
+        right: 160px;
         width: 150px;
         height: 150px;
     }
     #mobile-background11 {
-        bottom: -50px;
-        right: 60px;
+        bottom: 50px;
+        right: -10px;
         width: 100px;
         height: 100px;
     }
@@ -1340,5 +1348,44 @@ section {
         background: linear-gradient(48.55deg, #D95129 19.25%, #F16521 98.13%);
         border-radius: 30px;
         transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+    }
+    #mobile-background13 {
+        top: 470px;
+        left: 150px;
+        width: 129.6px;
+        height: 129.6px;
+    }
+    #mobile-background14 {
+        top: 550px;
+        left: 20px;
+        width: 75px;
+        height: 75px;
+    }
+    #mobile-background15 {
+        bottom: 200px;
+        right: 200px;
+        width: 75px;
+        height: 75px;
+    }
+    #mobile-background16 {
+        top: 400px;
+        right: 10px;
+        width: 190px;
+        height: 190px;
+    }
+    #mobile-ad {
+        display: block;
+        width: 100%;
+    }
+    #mobile-ad:hover {
+        cursor: pointer;
+    }
+    #mobile-ad img {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #mobile-footer {
+        display: block;
+        text-align: center;
     }
 }
