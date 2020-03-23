@@ -198,13 +198,13 @@ section {
     color: #525256;
 }
 
-@media screen and (max-width: 1031px) {
+/* @media screen and (max-width: 1031px) {
     #slogan {
         width: 256px;
         font-size: 20px;
         line-height: normal;
     }
-}
+} */
 
 #easy {
     color: #1CA78B;
@@ -311,7 +311,7 @@ section {
     color: #3B3B3B;
 }
 
-@media screen and (max-width: 1511px) {
+/* @media screen and (max-width: 1511px) {
     .quicklink-button {
         font-size: 18px;
         margin-right: 5px;
@@ -349,7 +349,7 @@ section {
         margin-right: 0px;
         margin-bottom: 0px;
     }
-}
+} */
 
 .quicklink-button:hover {
     cursor: pointer;
@@ -716,6 +716,14 @@ footer {
     }
 }
 
+@media screen and (max-width: 1511px) {
+    .quicklink-button {
+        font-size: 18px;
+        margin-right: 5px;
+        margin-bottom: 8px;
+    }
+}
+
 @media screen and (max-width: 1504px) {
     #background3 {
         left: 80px;
@@ -740,6 +748,14 @@ footer {
     }
     #background11 {
         left: 65px;
+    }
+}
+
+@media screen and (max-width: 1436px) {
+    .quicklink-button {
+        font-size: 16px;
+        margin-right: 2px;
+        margin-bottom: 5px;
     }
 }
 
@@ -775,6 +791,22 @@ footer {
         top: 360px;
         width: 120px;
         height: 120px;
+    }
+}
+
+@media screen and (max-width: 1355px) {
+    .quicklink-button {
+        font-size: 14px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .quicklink-button {
+        font-size: 12px;
+        margin-right: 2px;
+        margin-bottom: 5px;
     }
 }
 
@@ -914,6 +946,22 @@ footer {
     }
     #input-container input {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .quicklink-button {
+        font-size: 10px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1031px) {
+    #slogan {
+        width: 256px;
+        font-size: 20px;
+        line-height: normal;
     }
 }
 
@@ -1610,5 +1658,223 @@ footer {
     }
     #mobile-background16 {
         right: -100px;
+    }
+}
+
+@media screen and (max-width: 412.5px) {
+    #mobile-logo {
+        font-size: 15px;
+    }
+    #mobile-header-btn-container button {
+        width: 70px;
+        margin-right: 0px;
+    }
+    #mobile-header-btn-container button:last-child {
+        margin-right: 10px;
+    }
+    #mobile-header-btn-container button i, span {
+        font-size: 10px;
+    }
+    #mobile-menu {
+        width: 25px;
+    }
+    #mobile-menu ul li:first-child, #mobile-menu ul:hover li {
+        font-size: 15px;
+    }
+    #mobile-menu ul:hover li {
+        padding: 0px;
+    }
+    #mobile-menu ul li:first-child {
+        padding-bottom: 10px;
+    }
+    #mobile-slogan, #mobile-easy {
+        font-size: 17.4px;
+    }
+    #mobile-input {
+        width: 90%;
+    }
+    #mobile-input input {
+        font-size: 12px;
+    }
+    .btn-mobile-quicklink {
+        font-size: 11px;
+    }
+    .mobile-box-item:hover .mobile.box-span {
+        font-size: 11px;
+    }
+    #mobile-top-box img {
+        height: 35px;
+        margin-left: 27px;
+    }
+    #mobile-top-box:hover img {
+        height: 40px;
+    }
+    #mobile-middle-box img {
+        height: 20px;
+        margin-left: 9px;
+    }
+    #mobile-middle-box:hover img {
+        height: 25px;
+    }
+    #mobile-bottom-box img {
+        height: 25px;
+        margin-left: 19px;
+    }
+    #mobile-bottom-box:hover img {
+        height: 35px;
+    }
+    #mobile-background6 {
+        bottom: -100px;
+        left: -50px;
+    }
+    #mobile-background7 {
+        bottom: -215px;
+    }
+    #mobile-background8 {
+        right: -165px;
+    }
+    #mobile-background10 {
+        right: -60px;
+    }
+    #mobile-background11 {
+        bottom: -200px;
+        right: -70px;
+    }
+    #mobile-background14 {
+        top: 460px;
+    }
+    #mobile-background15 {
+        bottom: 150px;
+        right: 60px;
+    }
+    #mobile-background16 {
+        right: -115px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #mobile-menu ul li:first-child, #mobile-menu ul:hover li {
+        font-size: 13px;
+    }
+    #mobile-slogan, #mobile-easy {
+        font-size: 15.4px;
+    }
+    #mobile-input input {
+        font-size: 11px;
+    }
+    #mobile-quicklink-container span:last-child {
+        font-size: 14px;
+    }
+    .btn-mobile-quicklink {
+        font-size: 10px;
+    }
+    .mobile-box-item:hover .mobile.box-span {
+        font-size: 10px;
+    }
+    #mobile-top-box img {
+        height: 30px;
+        margin-left: 21px;
+    }
+    #mobile-top-box:hover img {
+        height: 35px;
+    }
+    #mobile-middle-box img {
+        height: 15px;
+        margin-left: 9px;
+    }
+    #mobile-middle-box:hover img {
+        height: 20px;
+    }
+    #mobile-view-more, #mobile-middle-box:hover #mobile-view-more {
+        font-size: 8px;
+    }
+    #mobile-bottom-box img {
+        height: 20px;
+        margin-left: 14px;
+    }
+    #mobile-bottom-box:hover img {
+        height: 30px;
+    }
+    #mobile-background6 {
+        bottom: -120px;
+        left: -70px;
+    }
+    #mobile-background7 {
+        bottom: -285px;
+    }
+    #mobile-background10 {
+        bottom: -155px;
+    }
+    #mobile-background11 {
+        bottom: -295px;
+        right: -50px;
+    }
+    #mobile-background13 {
+        top: 555px;
+        left: 0px;
+    }
+    #mobile-background14 {
+        top: 445px;
+    }
+    #mobile-background15 {
+        bottom: 45px;
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    #mobile-menu ul li:first-child, #mobile-menu ul:hover li {
+        font-size: 12px;
+    }
+    #mobile-slogan, #mobile-easy {
+        font-size: 14.4px;
+    }
+    #mobile-input input {
+        font-size: 10px;
+    }
+    #mobile-quicklink-container span:last-child {
+        font-size: 13px;
+    }
+    .btn-mobile-quicklink {
+        font-size: 9px;
+    }
+    .mobile.box-span {
+        font-size: 8px;
+    }
+    .mobile-box-item:hover .mobile.box-span {
+        font-size: 10px;
+    }
+    #mobile-top-box img {
+        margin-left: 15px;
+    }
+    #mobile-middle-box img {
+        margin-right: 5px;
+    }
+    #mobile-bottom-box img {
+        margin-right: 9px;
+    }
+    #mobile-background6 {
+        bottom: -165px;
+        left: -80px;
+    }
+    #mobile-background7 {
+        bottom: -340px;
+    }
+    #mobile-background10 {
+        right: -80px;
+        bottom: -220px;
+    }
+    #mobile-background11 {
+        bottom: -365px;
+    }
+    #mobile-background13 {
+        left: -13px;
+    }
+    #mobile-background15 {
+        bottom: 20px;
+        right: 30px;
+    }
+    #mobile-background16 {
+        right: -140px;
     }
 }
